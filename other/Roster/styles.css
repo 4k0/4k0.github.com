@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@600&display=swap");
+
+.container,
+body,
+html {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  color: whitesmoke;
+  height: 100%;
+  overflow: hidden;
+  background-color: #111111;
+}
+
+.container {
+  display: flex;
+}
+
+.box {
+  font-family: "Fira Code", monospace;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 100% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+
+  animation: title 1s infinite alternate;
+}
+
+@keyframes title {
+  0% {
+    text-shadow: none;
+    text-shadow: -3px 1px 0px #FF0BAC;
+    text-shadow: -2.5px 2px 0px #FF0BAC;
+    text-shadow: -1.5px 3px 0px #FF0BAC;
+  }
+
+  100% {
+    text-shadow: none;
+    text-shadow: 3px -1px 0px #EB63A0;
+    text-shadow: 2.5px -2px 0px #EB63A0;
+    text-shadow: 1.5px -3px 0px #EB63A0;
+  }
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+}
